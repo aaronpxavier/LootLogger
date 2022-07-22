@@ -14,6 +14,7 @@ class Item: Equatable, CustomStringConvertible, Codable {
     var serialNumber: String?
     let dateCreated: Date
     var description: String
+    var itemKey: String
 
     init(name: String, serialNumber: String?, valueInDollars: Int) {
         self.name = name
@@ -21,6 +22,7 @@ class Item: Equatable, CustomStringConvertible, Codable {
         self.serialNumber = serialNumber
         self.description = "\nname: \(name)\tvalueInDollars: \(valueInDollars)\n"
         self.dateCreated = Date()
+        self.itemKey = UUID().uuidString
     }
     
     convenience init(random: Bool = false) {

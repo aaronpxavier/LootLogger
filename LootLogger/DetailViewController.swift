@@ -18,12 +18,14 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
     
     
     var numberFormatter = NumberFormatter()
+    
+    var imageStore:ImageStore!
+    
     var item:Item! {
         didSet {
             navigationItem.title = item.name
         }
     }
-    
     
     
     @IBAction func backGroundTapped(_ sender: UITapGestureRecognizer) {
@@ -53,6 +55,12 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         present(alertController, animated: true, completion: nil)
     }
     
+    
+    override func viewDidLoad() {
+        if let itemImg = imageStore.image(forKey: item.itemKey) {
+            imageView.image = itemImg
+        }
+    }
     
     
     
@@ -96,6 +104,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[.originalImage] as! UIImage
         imageView.image = image
+        imageStore.setImage(image, forKey: item.itemKey)
         dismiss(animated: true, completion: nil)
     }
 }

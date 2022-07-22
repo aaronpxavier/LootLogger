@@ -9,6 +9,8 @@ import UIKit
 
 class ItemsViewController: UITableViewController {
     
+    var imageStore:ImageStore!
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         navigationItem.leftBarButtonItem = editButtonItem
@@ -46,6 +48,7 @@ class ItemsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete, let item = itemStore?.allItems[indexPath.row] {
             itemStore?.removeItem(item)
+            imageStore?.deleteImage(forKey: item.itemKey)
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
@@ -63,6 +66,7 @@ class ItemsViewController: UITableViewController {
                 
                 let detailViewController = segue.destination as! DetailViewController
                 detailViewController.item = item
+                detailViewController.imageStore = imageStore
             }
         default:
             preconditionFailure("Unexpected segue identifier")
