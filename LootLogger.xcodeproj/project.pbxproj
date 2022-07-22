@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B2DCC7D28876A6E00F86222 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2DCC7C28876A6E00F86222 /* DetailViewController.swift */; };
+		9BA77775288B591D00C58ED1 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA77774288B591D00C58ED1 /* ImageStore.swift */; };
+		9BBC724E2885B0BC008E2835 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC724D2885B0BB008E2835 /* Item.swift */; };
+		9BBC72502885B495008E2835 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC724F2885B494008E2835 /* ItemStore.swift */; };
+		9BBC72522886178B008E2835 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC72512886178B008E2835 /* ItemCell.swift */; };
 		9BF0A6332885A24000B35A92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0A6322885A24000B35A92 /* AppDelegate.swift */; };
 		9BF0A6352885A24000B35A92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0A6342885A24000B35A92 /* SceneDelegate.swift */; };
-		9BF0A6372885A24000B35A92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0A6362885A24000B35A92 /* ViewController.swift */; };
 		9BF0A63A2885A24000B35A92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BF0A6382885A24000B35A92 /* Main.storyboard */; };
 		9BF0A63C2885A24200B35A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BF0A63B2885A24200B35A92 /* Assets.xcassets */; };
 		9BF0A63F2885A24200B35A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BF0A63D2885A24200B35A92 /* LaunchScreen.storyboard */; };
 		9BF0A64A2885A24200B35A92 /* LootLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0A6492885A24200B35A92 /* LootLoggerTests.swift */; };
 		9BF0A6542885A24200B35A92 /* LootLoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0A6532885A24200B35A92 /* LootLoggerUITests.swift */; };
 		9BF0A6562885A24200B35A92 /* LootLoggerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0A6552885A24200B35A92 /* LootLoggerUITestsLaunchTests.swift */; };
+		9BF0A6632885A40400B35A92 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0A6622885A40400B35A92 /* ItemsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B2DCC7C28876A6E00F86222 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9BA77774288B591D00C58ED1 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		9BBC724D2885B0BB008E2835 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		9BBC724F2885B494008E2835 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		9BBC72512886178B008E2835 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		9BF0A62F2885A24000B35A92 /* LootLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LootLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF0A6322885A24000B35A92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BF0A6342885A24000B35A92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9BF0A6362885A24000B35A92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9BF0A6392885A24000B35A92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BF0A63B2885A24200B35A92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BF0A63E2885A24200B35A92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,7 @@
 		9BF0A64F2885A24200B35A92 /* LootLoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LootLoggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF0A6532885A24200B35A92 /* LootLoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootLoggerUITests.swift; sourceTree = "<group>"; };
 		9BF0A6552885A24200B35A92 /* LootLoggerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootLoggerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9BF0A6622885A40400B35A92 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +111,16 @@
 			children = (
 				9BF0A6322885A24000B35A92 /* AppDelegate.swift */,
 				9BF0A6342885A24000B35A92 /* SceneDelegate.swift */,
-				9BF0A6362885A24000B35A92 /* ViewController.swift */,
 				9BF0A6382885A24000B35A92 /* Main.storyboard */,
 				9BF0A63B2885A24200B35A92 /* Assets.xcassets */,
 				9BF0A63D2885A24200B35A92 /* LaunchScreen.storyboard */,
 				9BF0A6402885A24200B35A92 /* Info.plist */,
+				9BF0A6622885A40400B35A92 /* ItemsViewController.swift */,
+				9BBC724D2885B0BB008E2835 /* Item.swift */,
+				9BBC724F2885B494008E2835 /* ItemStore.swift */,
+				9BBC72512886178B008E2835 /* ItemCell.swift */,
+				9B2DCC7C28876A6E00F86222 /* DetailViewController.swift */,
+				9BA77774288B591D00C58ED1 /* ImageStore.swift */,
 			);
 			path = LootLogger;
 			sourceTree = "<group>";
@@ -258,9 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BF0A6372885A24000B35A92 /* ViewController.swift in Sources */,
+				9BBC724E2885B0BC008E2835 /* Item.swift in Sources */,
+				9BF0A6632885A40400B35A92 /* ItemsViewController.swift in Sources */,
+				9BBC72522886178B008E2835 /* ItemCell.swift in Sources */,
+				9BA77775288B591D00C58ED1 /* ImageStore.swift in Sources */,
 				9BF0A6332885A24000B35A92 /* AppDelegate.swift in Sources */,
+				9BBC72502885B495008E2835 /* ItemStore.swift in Sources */,
 				9BF0A6352885A24000B35A92 /* SceneDelegate.swift in Sources */,
+				9B2DCC7D28876A6E00F86222 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,8 +459,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LootLogger/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to associate photos with the items";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -466,8 +487,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LootLogger/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to associate photos with the items";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
