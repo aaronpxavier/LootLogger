@@ -59,6 +59,8 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
     override func viewDidLoad() {
         if let itemImg = imageStore.image(forKey: item.itemKey) {
             imageView.image = itemImg
+        } else {
+            imageView.image = UIImage(named: "PlaceholderImg")
         }
     }
     
